@@ -1,3 +1,4 @@
+
 var quotes = [
   {
     caption:
@@ -129,8 +130,8 @@ function change() {
     used = [];
   }
   do {
-    var r = Math.floor(Math.random() * quotes.length);
-  } while (used.includes(r));
+    var r= used.length;
+    } while (used.includes(r));
 
   document.getElementById("caption").innerHTML =
     '<i class="fa-solid fa-quote-left"></i>' +
@@ -146,7 +147,6 @@ function change() {
   used.push(r);
   console.log(used);
 }
-
 
 
 
