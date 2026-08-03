@@ -13,7 +13,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "./Azkar/",
+  "start_url": "./Azkar",
   "scope": "./",
   "background_color": "#000000",
   "display": "standalone",
