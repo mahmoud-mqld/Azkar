@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Qutes-PWA</title>
     <meta name="theme-color" content="#00865C"/>
     <link rel="manifest" href="manifest.json">
+
+    <!-- iOS PWA support (Android/desktop read this info from manifest.json) -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="أذكار">
+    <link rel="apple-touch-icon" href="icons-192.png">
+
     <script>
         //if browser support service worker
         if('serviceWorker' in navigator) {
           navigator.serviceWorker.register('sw.js');
         };
       </script>
-
-
     <link rel="shortcut icon" href="quotation-mark_94894.png" type="image/x-icon">
     <!-- bootstrab -->
     <link rel="shortcut icon" href="" type="image/x-icon">
@@ -36,37 +40,19 @@
     <!-- main-style -->
     <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
-
     <div>
         <div id="qoute"
             class="qoute  m-auto text-center   d-flex justify-content-center align-items-center align-content-center flex-column row">
-
             <button onclick="change()" class=" btn-red "><i class=" display-6 bi bi-chat-left-quote-fill"></i></button>
             <div id="caption" class="col-lg-8 display-6  ">
-
                 "الأذكار تشكل جزءًا أساسيًا من العبادة للمسلم، ووسيلة للمسلم للتقرب إلى الله سبحانه وتعالى والحفاظ على ذكره في كل الأوقات. من أهم الأذكار التي يجب الحرص عليها هي أذكار الصباح، وأذكار المساء، وأذكار قبل النوم. أذكار الصباح تبدأ بعد صلاة الفجر وتستمر حتى طلوع الشمس، وأذكار المساء تُقال بعد صلاة العصر وحتى غروب الشمس. هي مشابهة لأذكار الصباح لكن بتغيير الألفاظ من "أصبحنا" إلى "أمسينا"
             </div>
-
-
             <div id="auther" class=" fs-3 col-lg-4">
-
                 ""
             </div>
-
         </div>
-
     </div>
-
     <script src="index.js"></script>
 </body>
-
 </html>
-
-
-
-
-
-
-
